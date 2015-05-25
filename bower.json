@@ -1,0 +1,27 @@
+{
+  "name": "doctro",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bcinarli/doctro",
+  "authors": [
+    "Bilal Çınarlı <bcinarli@gmail.com>"
+  ],
+  "description": "Doctro is a simple reusable documentation template",
+  "main": "index.html",
+  "keywords": [
+    "clean",
+    "documentation",
+    "template"
+  ],
+  "license": "Apache V.2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "caffeine": "~0.4.1",
+    "melange": "~0.4.0"
+  }
+}
