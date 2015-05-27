@@ -1,14 +1,9 @@
 /* @author Bilal Cinarli */
 
 /** -------------------------------------------
-    GUI
+    Content
     ------------------------------------------- **/
-//
-// Elements
-//
-@import "elements/elements";
-
-//
-// Layout
-//
-@import "layout/layout";
+.#{$namespace}content {
+    position: relative;
+    margin-top: $base-gutter + $base-header-height;
+}

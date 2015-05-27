@@ -1,14 +1,19 @@
 /* @author Bilal Cinarli */
 
 /** -------------------------------------------
-    GUI
+    Layout
     ------------------------------------------- **/
 //
-// Elements
+// Page
 //
-@import "elements/elements";
+@import "page";
 
 //
-// Layout
+// Header
 //
-@import "layout/layout";
+@import "header";
+
+//
+// Content
+//
+@import "content";

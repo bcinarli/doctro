@@ -1,0 +1,15 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Page
+    ------------------------------------------- **/
+.#{$namespace}page-wrap {
+
+}
+
+.container-wrap {
+    position: relative;
+    width: $base-content-width;
+    min-height: 100%;
+    margin: 0 auto;
+}
