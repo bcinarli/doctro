@@ -1,0 +1,14 @@
+{
+  "default": [
+    "dist",
+    "dev"
+  ],
+  "dist": [
+    "watch",
+    "sass:dist"
+  ],
+  "dev": [
+    "watch",
+    "sass:dev"
+  ]
+}

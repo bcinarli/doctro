@@ -1,0 +1,33 @@
+{
+  "name": "doctro",
+  "version": "0.1.0",
+  "description": "Doctro is a simple reusable documentation template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcinarli/doctro.git"
+  },
+  "keywords": [
+    "clean",
+    "documentation",
+    "template"
+  ],
+  "author": "Bilal Cinarli <bcinarli@gmail.com>",
+  "license": "Apache V.2",
+  "bugs": {
+    "url": "https://github.com/bcinarli/doctro/issues"
+  },
+  "homepage": "https://github.com/bcinarli/doctro",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-config": "^0.17.1"
+  }
+}
