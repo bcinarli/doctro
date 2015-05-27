@@ -1,0 +1,16 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Fonts
+    ------------------------------------------- **/
+//
+// Text Font
+//
+@include font-face('Afta Sans', 'aftasansthin-regular');
+@include font-face('Afta Sans', 'aftasansthin-italic', normal, italic);
+
+//
+// Headings
+//
+@include font-face('Noticia Text', 'noticiatext-regular');
+@include font-face('Noticia Text', 'noticiatext-bold', bold);
