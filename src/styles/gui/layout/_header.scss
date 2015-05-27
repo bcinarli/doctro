@@ -1,0 +1,13 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Header
+    ------------------------------------------- **/
+.#{$namespace}page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    @include dims(100%, $base-header-height);
+    background-color: $color-primary;
+}
