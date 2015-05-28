@@ -4,49 +4,205 @@
     <meta charset="utf-8" />
     <title>Doctro</title>
 
-    <link rel="stylesheet" href="assets/styles/styles.min.css" />
+    <link rel="stylesheet" href="./assets/vendors/prism/prism.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.min.css" />
+
+    <script src="./assets/vendors/prism/prism.js"></script>
 </head>
 <body>
     <div id="wrapper" class="doctro-page-wrap">
         <header id="masthead" class="doctro-page-header">
-            <div class="container-wrap">
-                <a href="./" class="header-logo">
-                    <span class="header-logo-text">Doctro</span>
+            <div class="doctro-container-wrap">
+                <a href="./" class="doctro-header-logo">
+                    <span class="doctro-header-logo-text">Doctro</span>
                 </a>
             </div>
         </header>
 
-        <section class="doctro-content documentation-content container-wrap">
-            <nav class="content-navigation">
+        <section class="doctro-spot">
+            <div class="doctro-container-wrap"></div>
+        </section>
 
+        <section class="doctro-content documentation-content doctro-container-wrap group">
+            <nav class="doctro-content-navigation">
+                <div class="doctro-content-navigation-section">
+                    <h3 class="doctro-content-navigation-title">Quick Start</h3>
+
+                    <ul class="doctro-content-navigation-list">
+                        <li><a href="#what-is-doctro" class="doctro-content-navigation-item">What is Doctro?</a></li>
+                        <li><a href="#how-to-use" class="doctro-content-navigation-item">How to Use?</a></li>
+                    </ul>
+                </div>
+
+                <div class="doctro-content-navigation-section">
+                    <h3 class="doctro-content-navigation-title">Supporting Languages</h3>
+
+                    <ul class="doctro-content-navigation-list">
+                        <li><a href="#" class="doctro-content-navigation-item">Code Highlighting</a></li>
+                        <li><a href="#" class="doctro-content-navigation-item">Markup</a></li>
+                        <li><a href="#" class="doctro-content-navigation-item">CSS</a></li>
+                        <li><a href="#" class="doctro-content-navigation-item">SCSS</a></li>
+                        <li><a href="#" class="doctro-content-navigation-item">JavaScript</a></li>
+                        <li><a href="#" class="doctro-content-navigation-item">Java</a></li>
+                        <li><a href="#" class="doctro-content-navigation-item">PHP</a></li>
+                    </ul>
+                </div>
             </nav>
 
-            <div class="content-main">
-                <h1>Rebel Mission to Ord Mantell</h1>
-                <p>What good is a reward if you ain't around to use it? Besides, attacking that battle station ain't my idea of courage. It's more like&hellip;suicide. Hokey religions and ancient weapons are no match for a good blaster at your side, kid. Leave that to me. Send a distress signal, and inform the Senate that all on board were killed. No! Alderaan is peaceful. We have no weapons. You can't possibly&hellip; A tremor in the Force. The last time I felt it was in the presence of my old master. He is here.</p>
-                <h2>The Phantom Menace</h2>
-                <p>The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. I don't know what you're talking about. I am a member of the Imperial Senate on a diplomatic mission to Alderaan-- Ye-ha!</p>
-                <ul>
-                    <li>Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you.</li>
-                    <li>I call it luck.</li>
-                    <li>A tremor in the Force. The last time I felt it was in the presence of my old master.</li>
-                    <li>Escape is not his plan. I must face him, alone.</li>
-                </ul>
-                <h3>Attack of the Clones</h3>
-                <p>Leave that to me. Send a distress signal, and inform the Senate that all on board were killed. What good is a reward if you ain't around to use it? Besides, attacking that battle station ain't my idea of courage. It's more like&hellip;suicide. No! Alderaan is peaceful. We have no weapons. You can't possibly&hellip; Hey, Luke! May the Force be with you.</p>
-                <h4>Revenge of the Sith</h4>
-                <p>Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. Remember, a Jedi can feel the Force flowing through him. I have traced the Rebel spies to her. Now she is my only link to finding their secret base. I suggest you try it again, Luke. This time, let go your conscious self and act on instinct.</p>
-                <ol>
-                    <li>Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you.</li>
-                    <li>Don't underestimate the Force.</li>
-                    <li>In my experience, there is no such thing as luck.</li>
-                    <li>You mean it controls your actions?</li>
-                    <li>Oh God, my uncle. How am I ever gonna explain this?</li>
-                </ol>
-                <h5>Revenge of the Sith</h5>
-                <p>The Force is strong with this one. I have you now. Hokey religions and ancient weapons are no match for a good blaster at your side, kid. I need your help, Luke. She needs your help. I'm getting too old for this sort of thing. No! Alderaan is peaceful. We have no weapons. You can't possibly&hellip;</p>
+            <div class="doctro-content-main">
+                <article class="doctro-content-section">
+                    <h1>Quick Start</h1>
+
+                    <h2 id="what-is-doctro">What is Doctro?</h2>
+                    <p>Doctro is a clean and simple documentation template. You can freely use it for project. Just download or clone the project and replace its content with your own documentation.</p>
+
+                    <h2>How to Use?</h2>
+                    <p>In template, Doctro has its own <code>doctro-</code> prefixed classes. For coding samples, wrap your codes with first <code>pre</code> and then <code>code</code> tags with the desired language highlight class.</p>
+                    <p>The rest of is your content :)</p>
+                </article>
+
+                <article class="doctro-content-section">
+                    <h1>Supporting Languages</h1>
+
+                    <h2>Code Higlighting</h2>
+                    <p><a href="http://prismjs.com/" class="external" rel="nofollow">prismjs</a> code highlight library is bundled with the  Doctro. By default, the supported languages and syntaxes are, Markup, CSS, SCSS, JavaScript, Handlebars, Git, Java, Markdown, PHP, SQL and JSX. But anytime you can extend the code support from <strong>prismjs</strong>'s own download builder or replacing it with your preferred highlight library</p>
+
+                    <h2>Markup</h2>
+                    <p>For markup higlighting, is prism, you have to add <code>language-markup</code> class to both <code>pre</code> and <code>code</code> blocks</p>
+
+<pre class="language-markup">
+<code class="language-markup">
+&lt;h2>How to Use?&lt;/h2>
+&lt;p>The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. I don't know what you're talking about. I am a member of the Imperial Senate on a diplomatic mission to Alderaan-- Ye-ha!&lt;/p>
+&lt;ul>
+    &lt;li>Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you.&lt;/li>
+    &lt;li>I call it luck.&lt;/li>
+    &lt;li>A tremor in the Force. The last time I felt it was in the presence of my old master.&lt;/li>
+    &lt;li>Escape is not his plan. I must face him, alone.&lt;/li>
+&lt;/ul>
+</code>
+</pre>
+
+                    <h2>CSS</h2>
+                    <p>For CSS higlighting, is prism, you have to add <code>language-css</code> class to both <code>pre</code> and <code>code</code> blocks</p>
+<pre class="language-css">
+<code class="language-css">
+/**
+  * Columns
+  * Better controlling the width, gutter defined as right & left padding
+  */
+[class*="-column"] {
+    position: relative;
+    float: left;
+    padding: 0 20px;
+}
+
+[class*="-column"].doctro-column-parent {
+    padding: 0;
+}
+
+[class*="column-reverse"] {
+    float: right;
+}
+</code>
+</pre>
+
+                    <h2>SCSS</h2>
+                    <p>For SCSS higlighting, is prism, you have to add <code>language-scss</code> class to both <code>pre</code> and <code>code</code> blocks</p>
+<pre class="language-scss">
+<code class="language-scss">
+.#{$namespace}page-wrap {
+    position: relative;
+    min-height: 100%;
+}
+
+.#{$namespace}container-wrap {
+    position: relative;
+    width: $base-content-width;
+    min-height: 100%;
+    margin: 0 auto;
+}
+</code>
+</pre>
+
+                    <h2>JavaScript</h2>
+                    <p>For JavaScript higlighting, is prism, you have to add <code>language-javascript</code> class to both <code>pre</code> and <code>code</code> blocks</p>
+<pre class="language-javascript">
+<code class="language-javascript">
+if (Prism.languages.markup) {
+    Prism.languages.insertBefore('markup', 'tag', {
+        'script': {
+            pattern: /&lt;script[\w\W]*?>[\w\W]*?<\/script>/i,
+            inside: {
+                'tag': {
+                    pattern: /&lt;script[\w\W]*?>|<\/script>/i,
+                    inside: Prism.languages.markup.tag.inside
+                },
+                rest: Prism.languages.javascript
+            },
+            alias: 'language-javascript'
+        }
+    });
+}
+</code>
+</pre>
+
+                    <h2>Java</h2>
+                    <p>For Java higlighting, is prism, you have to add <code>language-java</code> class to both <code>pre</code> and <code>code</code> blocks</p>
+<pre class="language-java">
+<code class="language-java">
+// Hello.java
+import java.io.*;
+import javax.servlet.*;
+
+public class Hello extends GenericServlet {
+    public void service(final ServletRequest request, final ServletResponse response)
+    throws ServletException, IOException {
+        response.setContentType("text/html");
+        final PrintWriter pw = response.getWriter();
+
+        try {
+            pw.println("Hello, world!");
+        }
+        finally {
+            pw.close();
+        }
+    }
+}
+</code>
+</pre>
+
+                    <h2>PHP</h2>
+                    <p>For PHP higlighting, is prism, you have to add <code>language-php</code> class to both <code>pre</code> and <code>code</code> blocks</p>
+<pre class="language-php">
+<code class="language-php">
+class Person
+{
+    public $firstName;
+    public $lastName;
+
+    public function __construct($firstName, $lastName = '') { // optional second argument
+        $this->firstName = $firstName;
+        $this->lastName  = $lastName;
+    }
+
+    public function greet() {
+        return 'Hello, my name is ' . $this->firstName .
+                (($this->lastName != '') ? (' ' . $this->lastName) : '') . '.';
+    }
+
+    public static function staticGreet($firstName, $lastName) {
+        return 'Hello, my name is ' . $firstName . ' ' . $lastName . '.';
+    }
+}
+</code>
+</pre>
+                </article>
             </div>
         </section>
     </div>
+    <footer class="doctro-page-footer">
+        <div class="doctro-container-wrap"></div>
+    </footer>
 </body>
 </html>

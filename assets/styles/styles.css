@@ -2010,7 +2010,11 @@ h1, h2, h3, h4, h5, h6 {
 /** -------------------------------------------
     Page
     ------------------------------------------- **/
-.container-wrap {
+.doctro-page-wrap {
+  position: relative;
+  min-height: 100%; }
+
+.doctro-container-wrap {
   position: relative;
   width: 960px;
   min-height: 100%;
@@ -2036,5 +2040,61 @@ h1, h2, h3, h4, h5, h6 {
 .doctro-content {
   position: relative;
   margin-top: 100px; }
+  .doctro-content-navigation {
+    position: relative;
+    float: left;
+    width: 200px; }
+  .doctro-content-main {
+    position: relative;
+    float: right;
+    width: calc(100% - 220px); }
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Footer
+    ------------------------------------------- **/
+.doctro-page-footer {
+  position: relative;
+  height: 50px; }
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Components
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Logo
+    ------------------------------------------- **/
+.doctro-header-logo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none; }
+  .doctro-header-logo-text {
+    font-size: 2rem;
+    color: #fff; }
+
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Navigations
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+ 
+    ------------------------------------------- **/
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Content
+    ------------------------------------------- **/
+.doctro-content-navigation {
+  font-size: 0.875rem; }
+  .doctro-content-navigation-section {
+    margin-bottom: 20px; }
+  .doctro-content-navigation-title {
+    margin-bottom: 0; }
+  .doctro-content-navigation-item {
+    color: #333; }
 
 /*# sourceMappingURL=styles.css.map */

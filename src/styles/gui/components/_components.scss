@@ -1,24 +1,14 @@
 /* @author Bilal Cinarli */
 
 /** -------------------------------------------
-    Layout
+    Components
     ------------------------------------------- **/
 //
-// Page
+// Logo
 //
-@import "page";
+@import "logo";
 
 //
-// Header
+// Navigations
 //
-@import "header";
-
-//
-// Content
-//
-@import "content";
-
-//
-// Footer
-//
-@import "footer";
+@import "navigations/navigations";

@@ -6,4 +6,16 @@
 .#{$namespace}content {
     position: relative;
     margin-top: $base-gutter + $base-header-height;
+
+    &-navigation {
+        position: relative;
+        float: left;
+        width: $base-sidebar-width;
+    }
+
+    &-main {
+        position: relative;
+        float: right;
+        width: calc(100% - #{$base-gutter + $base-sidebar-width});
+    }
 }

@@ -1,0 +1,20 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Content
+    ------------------------------------------- **/
+.#{$namespace}content-navigation {
+    @include font-size(14px);
+
+    &-section {
+        margin-bottom: $base-gutter;
+    }
+
+    &-title {
+        margin-bottom: 0;
+    }
+
+    &-item {
+        color: $base-navigation-color;
+    }
+}

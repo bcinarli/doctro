@@ -4,10 +4,11 @@
     Page
     ------------------------------------------- **/
 .#{$namespace}page-wrap {
-
+    position: relative;
+    min-height: 100%;
 }
 
-.container-wrap {
+.#{$namespace}container-wrap {
     position: relative;
     width: $base-content-width;
     min-height: 100%;

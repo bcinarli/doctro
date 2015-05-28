@@ -1,0 +1,14 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Logo
+    ------------------------------------------- **/
+.#{$namespace}header-logo {
+    @include center-vertical();
+    text-decoration: none;
+
+    &-text {
+        @include font-size(2rem);
+        color: $color-white;
+    }
+}
