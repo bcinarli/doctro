@@ -1,0 +1,27 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Tables
+    ------------------------------------------- **/
+.#{$namespace}content-section table {
+    display: block;
+    width: 100%;
+
+    tr {
+        border-top: 1px solid $color-gray;
+
+        &:nth-child(2n) {
+            background-color: $color-light-gray;
+        }
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    th,
+    td {
+        padding: $base-gutter/2 $base-gutter;
+        border: 1px solid $color-gray;
+    }
+}
