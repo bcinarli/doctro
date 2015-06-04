@@ -2006,17 +2006,17 @@ h1, h2, h3, h4, h5, h6 {
 /** -------------------------------------------
     Tables
     ------------------------------------------- **/
-.doctro-content-section table {
+.doctro-content-table {
   display: block;
   width: 100%; }
-  .doctro-content-section table tr {
+  .doctro-content-table tr {
     border-top: 1px solid #c6c6c6; }
-    .doctro-content-section table tr:nth-child(2n) {
+    .doctro-content-table tr:nth-child(2n) {
       background-color: #f9f9f9; }
-  .doctro-content-section table th {
+  .doctro-content-table th {
     font-weight: bold; }
-  .doctro-content-section table th,
-  .doctro-content-section table td {
+  .doctro-content-table th,
+  .doctro-content-table td {
     padding: 10px 20px;
     border: 1px solid #c6c6c6; }
 
