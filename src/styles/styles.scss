@@ -16,7 +16,12 @@
 //
 // Melange
 //
-@import "../../bower_components/melange/lib/melange";
+@import "../../bower_components/melange/lib/melange/variables/variables";
+@import "../../bower_components/melange/lib/melange/globals/globals";
+@import "../../bower_components/melange/lib/melange/layout/layout";
+@import "../../bower_components/melange/lib/melange/elements/texts";
+@import "../../bower_components/melange/lib/melange/elements/links";
+@import "../../bower_components/melange/lib/melange/elements/lists";
 
 //
 // GUI

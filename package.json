@@ -1,6 +1,6 @@
 {
   "name": "doctro",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Doctro is a simple reusable documentation template",
   "main": "index.html",
   "scripts": {

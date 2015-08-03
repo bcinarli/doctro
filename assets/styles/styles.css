@@ -640,17 +640,6 @@
  * Widescreens
  *
  */
-/*! melange.css | @author Bilal Cinarli | melange.io */
-/**
- * Loads the main containers. Each folder has _*.scss container file with the same name.
- * This container files imports all other files in the same folder.
- */
-/** -------------------------------------------
-    General Settings
-    ------------------------------------------- **/
-/** -------------------------------------------
-    Internal Variables
-    ------------------------------------------- **/
 /* @author Bilal Cinarli */
 /** -------------------------------------------
     Variables Container
@@ -783,12 +772,6 @@
  *
  * Simply used for cancel button for a form or call-to-action, confirmation etc.
  */
-/** -------------------------------------------
-    Melange Internal Methods
-    ------------------------------------------- **/
-/** -------------------------------------------
-    Global Styles
-    ------------------------------------------- **/
 /* @author Bilal Cinarli */
 /** -------------------------------------------
     Global Styles Container
@@ -1195,7 +1178,7 @@ table, th, td {
  * And good-ol friend clearfix
  * For a meaningful name our clearfix class named as group
  */
-.group:after, .doctro-row:after, .media:after {
+.group:after, .doctro-row:after {
   content: "";
   display: table;
   clear: both; }
@@ -1210,13 +1193,6 @@ table, th, td {
 /**
  * Hard reset for an element
  */
-fieldset, .form-elements {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-  list-style: none; }
-
 /**
  * Vertical Center
  */
@@ -1261,9 +1237,6 @@ fieldset, .form-elements {
 .align-end {
   text-align: end; }
 
-/** -------------------------------------------
-    Layout Definitions
-    ------------------------------------------- **/
 /* @author Bilal Cinarli */
 /** -------------------------------------------
     Layouts Container
@@ -1552,13 +1525,6 @@ fieldset, .form-elements {
 .doctro-offset-by-seventeen {
   margin-left: 94.44444%; }
 
-/** -------------------------------------------
-    Base Element Styles
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Elements Container
-    ------------------------------------------- **/
 /* @author Bilal Cinarli */
 /** -------------------------------------------
     Text Styles
@@ -1572,316 +1538,6 @@ html {
 body {
   font: 16px/1.5 "Afta Sans", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
-
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Form Elements Container
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Field Wrappers
-    ------------------------------------------- **/
-/**
- * Fieldset for field wrappers
- */
-/**
- * Form Elements Holder
- * A list or a div for group form elements
- */
-.form-elements {
-    /**
-     * Forms mostly build with unordered list.
-
-        <ul class="form-element group">
-            <li class="group">
-                <label class="item-field">
-                    <span class="item-name">Label</span>
-                    <input />
-                </label>
-            </li>
-        </ul>
-     */ }
-  .form-elements li {
-    position: relative;
-    margin-bottom: 1em; }
-
-/**
- * Legend
- *
- * Make the legend as a block for better styling and control
- */
-legend {
-  display: block;
-  width: 100%;
-  margin-bottom: 1em; }
-
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Label Styles
-    ------------------------------------------- **/
-/**
- * Labels
- *
- * Fields should always wrapped with a label.
- * Helper .label class is used for applying label styles for other text elements
- *
-    <label class="item-field">
-        <span class="item-label"></span>
-        <input type="text" />
-    </label>
- *
- */
-label,
-.label {
-  position: relative;
-  display: inline-block; }
-
-/**
- * Item positions
- * In most cases, 
- * item-field is for showing label name and field in same line
- * item-stacked is for showing label name and field in rows
- * item-row is however, stacking the label wrappers together
- */
-.item-field {
-  margin-right: 1em; }
-.item-stacked:not(:only-child) {
-  margin-bottom: 1em; }
-.item-row + .item-row {
-  margin-top: 1em; }
-.item-error {
-  color: #e87352; }
-
-/**
- * Label texts
- */
-.item-label,
-.field-label {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  /**
-   * When item is stacked, label text will be over the label input
-   */
-  /**
-   * Required field has a star at the beginning of label
-   */ }
-  .item-stacked .item-label, .item-stacked
-  .field-label {
-    display: block; }
-  .required .item-label:before, .required
-  .field-label:before {
-    content: "*";
-    position: absolute;
-    left: -10px; }
-
-/**
- * Field Help
- *
- * Although this is not an actual label, it can be used as helper text for the field
- */
-.field-help {
-  font-size: .8em;
-  font-style: italic; }
-
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Input Fields
-    ------------------------------------------- **/
-/**
- * Text based (input[type=text] etc.) field styles
- *
- * .text-field class is added in order to styling other elements like a text field
- */
-input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"],
-textarea,
-.text-field {
-  outline: 0;
-  padding: 5px;
-  border: 1px solid #c6c6c6;
-  color: inherit;
-  font-size: 1rem;
-  font-weight: normal; }
-  input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus,
-  textarea:focus,
-  .text-field:focus, input[type="text"]:active, input[type="password"]:active, input[type="datetime"]:active, input[type="datetime-local"]:active, input[type="date"]:active, input[type="month"]:active, input[type="time"]:active, input[type="week"]:active, input[type="number"]:active, input[type="email"]:active, input[type="url"]:active, input[type="search"]:active, input[type="tel"]:active, input[type="color"]:active,
-  textarea:active,
-  .text-field:active {
-    border-color: #a6a6a6;
-    background: #fff; }
-  input[readonly][type="text"], input[readonly][type="password"], input[readonly][type="datetime"], input[readonly][type="datetime-local"], input[readonly][type="date"], input[readonly][type="month"], input[readonly][type="time"], input[readonly][type="week"], input[readonly][type="number"], input[readonly][type="email"], input[readonly][type="url"], input[readonly][type="search"], input[readonly][type="tel"], input[readonly][type="color"],
-  textarea[readonly],
-  [readonly].text-field, input.readonly[type="text"], input.readonly[type="password"], input.readonly[type="datetime"], input.readonly[type="datetime-local"], input.readonly[type="date"], input.readonly[type="month"], input.readonly[type="time"], input.readonly[type="week"], input.readonly[type="number"], input.readonly[type="email"], input.readonly[type="url"], input.readonly[type="search"], input.readonly[type="tel"], input.readonly[type="color"],
-  textarea.readonly,
-  .readonly.text-field {
-    cursor: default;
-    border-color: #c6c6c6;
-    background-color: #f9f9f9; }
-  input.item-error[type="text"], input.item-error[type="password"], input.item-error[type="datetime"], input.item-error[type="datetime-local"], input.item-error[type="date"], input.item-error[type="month"], input.item-error[type="time"], input.item-error[type="week"], input.item-error[type="number"], input.item-error[type="email"], input.item-error[type="url"], input.item-error[type="search"], input.item-error[type="tel"], input.item-error[type="color"],
-  textarea.item-error,
-  .item-error.text-field {
-    border-color: #e87352; }
-
-input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"],
-textarea,
-.text-field {
-  -webkit-appearance: none; }
-
-/**
- * Checkable (checkbox, radio) field styles
- */
-input[type="checkbox"], input[type="radio"] {
-  vertical-align: middle;
-  /**
-   * Fields and labels together
-   *
-      <label class="item-field">
-          <input type="checkbox" />
-          <span class="item-label">Label</span>
-      </label>
-   */ }
-  input[type="checkbox"] + .field-label,
-  input[type="checkbox"] + .item-label, input[type="radio"] + .field-label,
-  input[type="radio"] + .item-label {
-    font-weight: normal;
-    margin-left: .25em;
-    vertical-align: middle; }
-
-/**
- * Other input types
- */
-/**
- * Textarea
- *
- * Textareas are like input text fields in most cases, but they need additional styling
- * since they are resizable and allows multiple lines
- */
-textarea {
-  min-height: 3em;
-  resize: vertical; }
-
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Button Styles
-    ------------------------------------------- **/
-/**
- * In most cases, using buttons with button tag allows more styling options
- * it is cross browser and meaningful. Also ".button" class is added in order to
- * get button-like elements
- */
-button,
-input[type="submit"],
-input[type="reset"],
-input.button, .button, [class*="-action"]:not([class*="-actions"]) {
-  -webkit-apperance: none;
-  -moz-apperance: none;
-  apperance: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  display: inline-block;
-  cursor: pointer;
-  padding: 6px 15px;
-  background: #c6c6c6;
-  line-height: normal;
-  color: #222; }
-  button:disabled,
-  input[type="submit"]:disabled,
-  input[type="reset"]:disabled, .button:disabled, [class*="-action"]:disabled:not([class*="-actions"]), button.disabled,
-  input.disabled[type="submit"],
-  input.disabled[type="reset"], .disabled.button, .disabled[class*="-action"]:not([class*="-actions"]) {
-    cursor: default;
-    background: #ececec; }
-  button:hover,
-  input[type="submit"]:hover,
-  input[type="reset"]:hover, .button:hover, [class*="-action"]:hover:not([class*="-actions"]) {
-    color: #222;
-    background-color: #b3b3b3; }
-  button:active,
-  input[type="submit"]:active,
-  input[type="reset"]:active, .button:active, [class*="-action"]:active:not([class*="-actions"]) {
-    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3); }
-
-/**
- * Native button elements
- * Input button elements
- */
-button,
-input[type="submit"],
-input[type="reset"],
-input.button {
-  border: transparent; }
-
-/**
- * Anchor and other elements
- */
-.button {
-  text-align: center; }
-  .button, .button:hover, .button:focus, .button:active {
-    text-decoration: none; }
-
-/** 
- * Action Buttons
- * specificity increased in order to overwrite [class*="-action"]:not([class*="-actions"])
- * without using !important rule. By this, it can easily modified `.some-class .primary-action` selector
- */
-.primary-action.primary-action {
-  background-color: #009bdc;
-  color: #fff; }
-  .primary-action.primary-action:hover {
-    background-color: #0080b6;
-    color: #fff; }
-
-.secondary-action.secondary-action {
-  background-color: #67af00;
-  color: #fff; }
-  .secondary-action.secondary-action:hover {
-    background-color: #508900;
-    color: #fff; }
-
-.tertiary-action.tertiary-action {
-  background-color: #ffa900;
-  color: #fff; }
-  .tertiary-action.tertiary-action:hover {
-    background-color: #d99000;
-    color: #fff; }
-
-.cancel-action.cancel-action,
-input[type="reset"] {
-  background-color: #e87352;
-  color: #fff; }
-  .cancel-action.cancel-action:hover,
-  input[type="reset"]:hover {
-    background-color: #e45830;
-    color: #fff; }
-
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Table Styles
-    ------------------------------------------- **/
-/**
- * Table
- */
-table {
-  width: 100%; }
-
-/**
- * TFoot
- */
-tfoot td:only-child {
-  text-align: right; }
-
-/**
- * Cells
- */
-th,
-td {
-  padding: 0.5em;
-  text-align: left; }
 
 /* @author Bilal Cinarli */
 /** -------------------------------------------
@@ -1910,10 +1566,6 @@ nav ul {
 
 /* @author Bilal Cinarli */
 /** -------------------------------------------
-    Heading Styles
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
     Lists
     ------------------------------------------- **/
 ol,
@@ -1925,43 +1577,6 @@ dl {
   padding-left: 20px; }
   dl dt {
     font-weight: bold; }
-
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Inline elements
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Block Styles
-    ------------------------------------------- **/
-/** -------------------------------------------
-    Default Components
-    ------------------------------------------- **/
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Components Container
-    ------------------------------------------- **/
-/**
- * Media Component
- */
-/* @author Bilal Cinarli */
-/** -------------------------------------------
-    Media Component
-    ------------------------------------------- **/
-/**
- * Media Item
- *
- * A media item indicates a block consists with a media item (image, flash, video etc.) and a text content
- */
-.media-visual {
-  display: block;
-  float: left;
-  margin-right: 1em; }
-
-.media-text + .media-visual {
-  float: right;
-  margin-right: auto;
-  margin-left: 1em; }
 
 /* @author Bilal Cinarli */
 /** -------------------------------------------
